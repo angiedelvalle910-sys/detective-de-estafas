@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Detective de Estafas</title>
+
+<meta
+name="description"
+content="Analizador inteligente de enlaces, correos electrónicos y reportes de fraude con interfaz futurista Cyberpunk.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link
+rel="stylesheet"
+href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+<link
+rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="cursor-glow"></div>
+
+<div class="background-grid"></div>
+
+<div class="background-blur one"></div>
+
+<div class="background-blur two"></div>
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-user-secret"></i>
+
+<h2>Detective de Estafas</h2>
+
+</div>
+
+<nav>
+
+<a href="#inicio">Inicio</a>
+
+<a href="#scanner">Escáner</a>
+
+<a href="#amenazas">Amenazas</a>
+
+<a href="#reportes">Reportar</a>
+
+</nav>
+
+</header>
+
+<section
+id="inicio"
+class="hero">
+
+<div
+class="hero-left"
+data-aos="fade-right">
+
+<span class="badge">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+Inteligencia Anti-Fraude
+
+</span>
+
+<h1>
+
+Protege tu identidad
+
+<span>
+
+antes de hacer clic.
+
+</span>
+
+</h1>
+
+<p>
+
+Analiza enlaces sospechosos, correos electrónicos
+y reporta intentos de estafa utilizando una
+experiencia futurista basada en inteligencia
+artificial.
+
+</p>
+
+<div class="hero-buttons">
+
+<button
+id="scrollScanner"
+class="primary-btn">
+
+Escanear Ahora
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</button>
+
+<button class="secondary-btn">
+
+Conocer Más
+
+</button>
+
+</div>
+
+<div class="stats">
+
+<div>
+
+<h3>98%</h3>
+
+<p>Detección</p>
+
+</div>
+
+<div>
+
+<h3>25K</h3>
+
+<p>Análisis</p>
+
+</div>
+
+<div>
+
+<h3>24/7</h3>
+
+<p>Protección</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div
+class="hero-right"
+data-aos="fade-left">
+
+<div class="glass-card">
+
+<img
+src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
+alt="Cyber Security">
+
+<div class="overlay">
+
+<h3>
+
+<i class="fa-solid fa-radar"></i>
+
+Cyber Radar
+
+</h3>
+
+<p>
+
+Escaneo en tiempo real
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section
+id="scanner"
+class="scanner-section">
+
+<h2
+data-aos="fade-up">
+
+Escáner Inteligente
+
+</h2>
+
+<p
+data-aos="fade-up">
+
+Pega un enlace, correo electrónico o mensaje
+sospechoso para iniciar un análisis profundo.
+
+</p>
+
+<div
+class="scanner-box"
+data-aos="zoom-in">
+
+<div class="scanner-header">
+
+<div class="light red"></div>
+
+<div class="light yellow"></div>
+
+<div class="light green"></div>
+
+<span>
+
+Cyber-Radar Console
+
+</span>
+
+</div>
+
+<textarea
+
+id="scannerInput"
+
+placeholder="https://ejemplo.com
+o pega aquí un correo sospechoso...">
+
+</textarea>
+
+<button
+id="scanButton">
+
+<i class="fa-solid fa-radar"></i>
+
+Iniciar Análisis
+
+</button>
+
+<div
+id="terminal"
+class="terminal">
+
+<pre id="terminalText"></pre>
+
+</div>
+
+<div
+id="resultCard"
+class="result-card">
+
+<h3>Resultado</h3>
+
+<p id="resultMessage">
+
+Esperando análisis...
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section
+id="amenazas"
+class="threats">
+
+<h2
+data-aos="fade-up">
+
+Amenazas Más Comunes
+
+</h2>
+
+<div class="bento-grid">
+
+<div
+class="card"
+data-aos="fade-up">
+
+<img
+src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=80">
+
+<i class="fa-solid fa-envelope-open-text"></i>
+
+<h3>Phishing</h3>
+
+<p>
+
+Correos falsos que intentan robar
+credenciales bancarias.
+
+</p>
+
+</div>
+
+<div
+class="card"
+data-aos="fade-up">
+
+<img
+src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80">
+
+<i class="fa-solid fa-mobile-screen"></i>
+
+<h3>Smishing</h3>
+
+<p>
+
+Mensajes SMS con enlaces maliciosos.
+
+</p>
+
+</div>
+
+<div
+class="card"
+data-aos="fade-up">
+
+<img
+src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h3>Malware</h3>
+
+<p>
+
+Software que roba información personal.
+
+</p>
+
+</div>
+
+<div
+class="card"
+data-aos="fade-up">
+
+<img
+src="https://images.unsplash.com/photo-1516321310764-8d5d7b92f7d3?auto=format&fit=crop&w=900&q=80">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<h3>Ingeniería Social</h3>
+
+<p>
+
+Manipulación psicológica para obtener
+datos privados.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section
+id="reportes"
+class="reports">
+
+<h2>
+
+Reportar Estafa
+
+</h2>
+
+<form class="report-form">
+
+<input
+type="text"
+placeholder="Nombre">
+
+<input
+type="email"
+placeholder="Correo">
+
+<textarea
+placeholder="Describe la estafa..."></textarea>
+
+<input
+type="file">
+
+<button>
+
+Enviar Reporte
+
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Detective de Estafas | Cyber Security Platform
+
+</p>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
